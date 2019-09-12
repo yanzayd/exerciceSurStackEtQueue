@@ -29,21 +29,13 @@ public class StcakExercise {
         System.out.println();
         
         //poping items from the stack
+        while(!toolStack.isEmpty()){
         String toolAtTop = toolStack.pop(); // throw the EmptyStackException if the stack is empty 
         System.out.println("stack.pop() => " + toolAtTop);
         System.out.println("Curent Stack => " + toolStack);
         System.out.println();
-        //2
-         toolAtTop = toolStack.pop(); // throw the EmptyStackException if the stack is empty 
-        System.out.println("stack.pop() => " + toolAtTop);
-        System.out.println("Curent Stack => " + toolStack);
-        System.out.println();
-        //3
-        toolAtTop = toolStack.peek(); // throw the EmptyStackException if the stack is empty 
-        System.out.println("stack.peek() => " + toolAtTop);
-        System.out.println("Curent Stack => " + toolStack);
-        System.out.println();
-        ;
+        
+        }
         
        
         

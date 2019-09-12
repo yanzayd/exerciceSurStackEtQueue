@@ -5,6 +5,7 @@
  */
 package queueexercise;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -14,7 +15,7 @@ import java.util.Queue;
  */
 public class QueueExercise {
    
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
        
         // create and initialize a  Queue using a linkedList
         Queue<String> attenteQueue = new LinkedList<>();
@@ -26,29 +27,20 @@ public class QueueExercise {
         attenteQueue.add("Muriel");
         attenteQueue.add("Toussaint");
         
+        //System.out.println("attenteQueue : " +attenteQueue);
+
         System.out.println("attenteQueue : " +attenteQueue);
         
         //Removing an element from the Queue using remove() the dequeueu operation
         //the remove method throws NoSuchElementException if the queue is empty
+       // Queue<String> empty = null;
         
-        String name = attenteQueue.remove();
-        
-        System.out.println("Removed from attenteQueue : " + name +" | New attenteQueue : " + attenteQueue + "\n" );
-        
-        //using the poll method we can remove elemnt as in remove except that it's return null if the Queue is empty
-        name = attenteQueue.poll();
-        
-        System.out.println("Removed from attenteQueue : " + name +  " | New attenteQueue : " + attenteQueue + "\n" );
-         name = attenteQueue.poll();
-         
-        System.out.println("Removed from attenteQueue : " + name +  " | New attenteQueue : " + attenteQueue + "\n" );
-         name = attenteQueue.poll();
-         
-        System.out.println("Removed from attenteQueue : " + name +  " | New attenteQueue : " + attenteQueue + "\n" );
-         name = attenteQueue.poll();
-         
-        System.out.println("Removed from attenteQueue : " + name +  " | New attenteQueue : " + attenteQueue + "\n" );
-        
+  while(!attenteQueue.isEmpty()){
+  String name = attenteQueue.remove();  
+  System.out.println("Removed from attenteQueue : " + name +" | New attenteQueue : " + attenteQueue + "\n" );
+  
+  }
+	
              
         
     }
